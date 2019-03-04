@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solitaire Positioning</title>
+
+<style>
+
+    .container {
+        height: 1500px;
+        width: 1500px;
+        background-image: url(../18_positioning/images/gradient.jpg);
+        background-repeat: repeat;
+    }
+
+    .box1 {
+        height: 300px;
+        width: 300px;
+        background-image: url(../18_positioning/images/felt.jpg);
+        background-repeat: repeat;
+        position: relative;
+        top: 25px;
+        left: 25px;
+    }
+
+    .ten {
+        position: absolute;
+        top: 170px;
+        left: 150px;
+        z-index: 5;
+    }
+
+    .jack {
+        position: absolute;
+        top: 145px;
+        left: 150px;
+        z-index: 4;
+    }
+
+    .queen {
+        position: absolute;
+        top: 120px;
+        left: 150px;
+        z-index: 3;
+    }
+
+    .king {
+        position: absolute;
+        top: 95px;
+        left: 150px;
+        z-index: 2;
+    }
+
+    .card {
+        position: absolute;
+        top: 70px;
+        left: 150px;
+        z-index: 1;
+    }
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="box1"></div>
+    <img src="images/tendiamonds.png" class="ten" width="64" height="100" alt="Ten of diamonds" />
+    <img src="images/jackclubs.png" class="jack" width="64" height="100" alt="jack of clubs" />
+    <img src="images/kingspades.png" class="king" width="64" height="100" alt="king of spades" />
+    <img src="images/queenhearts.png" class="queen" width="64" height="100" alt="queen of hearts" />
+    <img src="images/card.png" class="card" width="64" height="100" alt="card" />
+
+</div>
+
+</body>
+</html>
